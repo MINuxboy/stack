@@ -19,12 +19,19 @@ class stack{
 
     }
     public function top(){
-
+      if(empty($this->_stack)){
+      return null;
+ 
     }
-}
+    return end($this->stack);
+ 
+   }
+
+      }
 
 
-// $s1=new stack(15);
+
+$s1=new stack(15);
 
 for ($i=1; $i <=20; ++$i){
     $s1->push($i);
@@ -34,3 +41,5 @@ for ($i=1; $i <=20; ++$i){
 // while(($val =rs1->pop()) !=null){
 //     echo $val . "\n";
 // }
+
+echo $s1->top();
