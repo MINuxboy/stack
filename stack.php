@@ -1,7 +1,9 @@
 <?php
 class stack{
     private $_size;
+
     private $_stack = [];
+    
     function __construct($size)
     {
         echo "stack\n";
@@ -11,27 +13,28 @@ class stack{
       if(count($this->_stack) >= $this->_size){
         return false;
       }
+
       $this->_stack[]=$n;
        return true;
-    }
-   public function pop($size){
-    $this-> _array_pop($this->_stack);
+      }
+       public function pop($size){
+       $this-> _array_pop($this->_stack);
 
-    }
-    public function top(){
-      if(empty($this->_stack)){
-      return null;
+      }
+        public function top(){
+        if(empty($this->_stack)){
+           return null;
  
-    }
-    return end($this->stack);
+      }
+            return end($this->stack);
  
-   }
+     }
 
       }
 
 
 
-$s1=new stack(15);
+// $s1=new stack(15);
 
 for ($i=1; $i <=20; ++$i){
     $s1->push($i);
