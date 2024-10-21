@@ -5,6 +5,15 @@ class queve{
         $this->arr= array();
         print_r($this->arr);
     }
+    public function addval($vals){
+        return array_push($this->$vals);
+    }
+    public function view($vals){
+        print_r($this->arr);
+    }
+    
+
 }
 
 $s1=new queve();
+$s1->arr;
