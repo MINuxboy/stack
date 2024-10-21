@@ -16,15 +16,9 @@ class stack{
 
       $this->_stack[]=$n;
        return true;
-<<<<<<< HEAD
-      }
-       public function pop($size){
-       $this-> _array_pop($this->_stack);
-=======
     }
    public function pop($size){     
     $this-> _array_pop($this->_stack);
->>>>>>> dev
 
       }
         public function top(){
