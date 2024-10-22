@@ -6,7 +6,7 @@ class stack{
     
     function __construct($size)
     {
-        echo "stack\n";
+       $this->_size =$size;
     }
 
     public function push($n){
@@ -16,9 +16,9 @@ class stack{
 
       $this->_stack[]=$n;
        return true;
-    }
-   public function pop($size){     
-    $this-> _array_pop($this->_stack);
+      }
+       public function pop($size){
+       $this-> _array_pop($this->_stack);
 
       }
         public function top(){
