@@ -6,7 +6,7 @@ class stack{
     
     function __construct($size)
     {
-        echo "stack\n";
+       $this->_size =$size;
     }
 
     public function push($n){
